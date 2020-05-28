@@ -8,11 +8,7 @@ RSpec.describe ProductsController, type: :controller do
 
   describe "POST create" do
 
-    it 'creates a new product' do
-      post :create, params: { product: @product_attributes }
-      expect(response).to redirect_to(products_path)
-      expect(Product.count).to eq 1
-    end
+    it 'creates a new product'
 
   end
 
